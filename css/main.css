@@ -38,7 +38,7 @@ body {
   font-family: "Public sans" , "Arial" , sans-serif;
   margin: 0;
   overflow-x: hidden;
-  margin-top: 80px;
+  margin-top: 60px;
   padding: 0;
   height: 100%;
   display: -webkit-box;
@@ -605,6 +605,13 @@ main {
   word-break: break-all;
 }
 
+@media only screen and (max-width: 550px) {
+  .comfort__item-heading {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
 .comfort__item-text {
   font-size: 16px;
   line-height: 26px;
@@ -612,6 +619,12 @@ main {
   letter-spacing: -0.25px;
   color: #9597A5;
   margin-top: auto;
+}
+
+@media only screen and (max-width: 550px) {
+  .comfort__item-text {
+    font-size: 15px;
+  }
 }
 
 .comfort__item::before {
@@ -624,6 +637,12 @@ main {
   background-position: center center;
   background-size: 40px 40px , auto auto;
   margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 550px) {
+  .comfort__item::before {
+    margin-bottom: 24px;
+  }
 }
 
 .comfort__item-onlinebank::before {
