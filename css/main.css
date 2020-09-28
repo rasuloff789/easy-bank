@@ -446,4 +446,199 @@ main {
   letter-spacing: -0.28125px;
   color: #9597A5;
 }
+
+.comfort {
+  background-color: #F4F5F7;
+}
+
+.comfort .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 95px 20px;
+}
+
+@media only screen and (max-width: 850px) {
+  .comfort .container {
+    padding: 42.5px 20px;
+  }
+}
+
+.comfort-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 635px;
+  margin-bottom: 72px;
+}
+
+@media only screen and (max-width: 850px) {
+  .comfort-intro {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+}
+
+.comfort-heading {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+  color: #2D314D;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 850px) {
+  .comfort-heading {
+    font-size: 36px;
+  }
+}
+
+.comfort-text {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: -0.28125px;
+  color: #9597A5;
+}
+
+@media only screen and (max-width: 850px) {
+  .comfort-text {
+    font-size: 16px;
+  }
+}
+
+.comfort__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: 100%;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .comfort__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .comfort__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+}
+
+.comfort__item {
+  max-width: 250px;
+  margin: 0 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 1100px) {
+  .comfort__item {
+    max-width: 30%;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .comfort__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .comfort__item {
+    max-width: 45%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .comfort__item {
+    max-width: 100%;
+    margin: 0 auto 32px auto;
+  }
+}
+
+.comfort__item-heading {
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  margin-top: 0;
+  margin-bottom: 26px;
+  color: #2D314D;
+  word-break: break-all;
+}
+
+.comfort__item-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+  letter-spacing: -0.25px;
+  color: #9597A5;
+  margin-top: auto;
+}
+
+.comfort__item::before {
+  width: 72px;
+  height: 72px;
+  content: '';
+  display: block;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 40px 40px , auto auto;
+  margin-bottom: 40px;
+}
+
+.comfort__item-onlinebank::before {
+  background-image: url("../img/online-banking.svg"), linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+}
+
+.comfort__item-fast::before {
+  background-image: url("../img/fast-onboarding.svg"), linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+}
+
+.comfort__item-simple::before {
+  background-image: url("../img/simple-budgeting.svg"), linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+}
+
+.comfort__item-api::before {
+  background-image: url("../img/api.svg"), linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+}
 /*# sourceMappingURL=main.css.map */
