@@ -75,5 +75,95 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+}
+
+.header .sitenav__logo {
+  display: inline-block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.header .sitenav__logo-img {
+  display: block;
+  width: 140px;
+}
+
+.header .sitenav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  padding: 0 20px;
+  max-width: 500px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header .sitenav__link {
+  display: block;
+  padding: 32px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.107692px;
+  position: relative;
+  color: #9597A5;
+  overflow: hidden;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.header .sitenav__link:hover {
+  color: #2D314D;
+}
+
+.header .sitenav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.header .sitenav__link:hover::after {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.sitenav__invite {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 200%;
+  padding: 8px 34px;
+  color: #FFFFFF;
+  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  text-decoration: none;
+  border-radius: 22px;
+  max-width: 180px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.sitenav__invite:hover {
+  opacity: 0.5;
 }
 /*# sourceMappingURL=main.css.map */
