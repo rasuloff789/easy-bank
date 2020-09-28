@@ -1,0 +1,35 @@
+.hero{
+  background-color: #F2F2F2;
+  .container{
+    padding:170px 20px ;
+    position: relative;
+  }
+  &__img{
+    position: absolute;
+    top: -180px;
+    left: 530px;
+    z-index: 1;
+  }
+  &__container{
+    max-width: 500px;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  &-heading{
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 100;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: #2D314D;
+  }
+  &-text{
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: #9597A5;
+  }
+}
