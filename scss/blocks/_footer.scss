@@ -1,16 +1,33 @@
 .footer{
   background-color: #2D314D;
   padding: 50px 0;
+  @media only screen and (max-width:690px) {
+    padding: 40px 0;
+    
+  }
   .container{
     display: flex;
+    @media only screen and (max-width:690px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__social-container{
     display: flex;
     flex-direction: column;
     max-width: 155px;
+    @media only screen and (max-width:690px) {
+      margin-bottom: 32px;
+    }
   }
   &__logo{
     margin-bottom: auto;
+    & img{
+      display: block;
+    }
+    @media only screen and (max-width:690px) {
+      margin-bottom: 32px;
+    }
   }
   &__social-list{
     display: inline-flex;
@@ -36,8 +53,7 @@
     width: 20px;
     height: 20px;
     display: block;
-    transition: path ease 0.4s;
-   
+    
   }
   &__sitenav--list{
     max-width: 350px;
@@ -48,11 +64,34 @@
     list-style-type: none;
     justify-content: space-between;
     margin-left: 130px;
+    @media only screen and (max-width:800px) {
+      margin-left: 65px;
+    }
+    @media only screen and (max-width:750px) {
+      margin-left: 35px;
+    }
+    @media only screen and (max-width:690px) {
+      display: flex;
+      margin: 0;
+      flex-direction: column;
+      max-width: 50%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    @media only screen and (max-width:480px) {
+      max-width: 100%;
+    }
   } 
   &__sitenav--item{
     width: 45%;
     display: inline-flex;
     align-items: center;
+    @media only screen and (max-width:690px) {
+      max-width: 100%;
+      text-align: center;
+    }
   }
   &__sitenav--link{
     display:inline-block;
@@ -66,6 +105,12 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    @media only screen and (max-width:690px) {
+      width: 100%;
+      display: block;
+      max-width: 100%;
+      text-align: center;
+    }
     &:hover{
       color: #30C88F;
     }
@@ -75,10 +120,17 @@
     display: flex;
     flex-direction: column;
     max-width: 230px;
+    @media only screen and (max-width:690px) {
+      margin-left: 0;
+      align-items: center;
+      }
   }
   &__invite{
     margin-left: auto;
     margin-bottom: 24px;
+    @media only screen and (max-width:690px) {
+      margin-left: 0;
+      }
   }
   &__ender-text{
     font-size: 15px;
